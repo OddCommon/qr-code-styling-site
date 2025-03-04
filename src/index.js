@@ -591,7 +591,11 @@ document.getElementById("button-clear-corners-dot-color").onclick = () => {
 
 document.getElementById("qr-download").onclick = () => {
     const extension = document.getElementById("qr-extension").value;
-    qrCode.download({ extension, name: "qr-code-styling" });
+    const name = document.getElementById("form-data").value
+        .replace(/https?:\/\/|\.|\//g, '_')
+        .replace(/_+/g, '_')
+        .replace(/^_|_$/g, '');
+    qrCode.download({ extension, name });
 };
 
 //Download options
