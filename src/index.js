@@ -20,17 +20,22 @@ const qrCode = new QrCodeStyling({
 });
 
 function updateDescriptionContainerBackground(backgroundColor, qrColor) {
-    let leftColor, rightColor;
+//   let leftColor, rightColor;
 
-    if (getPerceptualBrightness(backgroundColor) > getPerceptualBrightness(qrColor)) {
-        leftColor = qrColor;
-        rightColor = backgroundColor;
-    } else {
-        leftColor = backgroundColor;
-        rightColor = qrColor;
-    }
+//   if (
+//     getPerceptualBrightness(backgroundColor) > getPerceptualBrightness(qrColor)
+//   ) {
+//     leftColor = qrColor;
+//     rightColor = backgroundColor;
+//   } else {
+//     leftColor = backgroundColor;
+//     rightColor = qrColor;
+//   }
 
-    descriptionContainer.style["background-image"] = `linear-gradient(90deg, #000 0%, ${leftColor} 50%, ${rightColor} 100%)`;
+//   descriptionContainer.style[
+//     "background-image"
+//   ] = `linear-gradient(90deg, #252424 0%, #363636 100%)`; // #252424 #363636
+//   descriptionContainer.style["color"] = `${rightColor}`;
 }
 
 function getPerceptualBrightness(color) {

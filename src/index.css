@@ -230,10 +230,11 @@ input[type="text"], input[type="number"] {
 }
 
 .qr-description {
-    color: #fff;
-    min-height: 30vh;
+    color: #ffea28;
+    padding: 1rem 0;
     justify-content: center;
     font-size: 21px;
+    background-image: linear-gradient(90deg, #252424 0%, #363636 100%);
 }
 
 .qr-description__lib-name {
