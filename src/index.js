@@ -16,7 +16,7 @@ delete initState.dotsOptions.gradient;
 
 const qrCode = new QrCodeStyling({
     ...initState,
-    image: defaultImage,
+    image: undefined,
 });
 
 function updateDescriptionContainerBackground(backgroundColor, qrColor) {
