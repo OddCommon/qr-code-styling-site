@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const rootPath = path.resolve(__dirname, "./");
 const srcPath = path.resolve(rootPath, "src");
-const docsPath = path.resolve(rootPath, "docs");
+const docsPath = path.resolve(rootPath, "public");
 
 const config = {
     entry: srcPath + "/index.js",
